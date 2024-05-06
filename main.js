@@ -2,7 +2,7 @@ const express = require('express');
 const booksRoutes = require('./routes/server.js');
 const app = express();
 app.use(booksRoutes);
-app.set('view  engine' , 'ejs');
+app.set('view engine' , 'ejs');
 
 
 

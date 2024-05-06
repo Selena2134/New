@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <table border="1">
+    <tr>
+        <th>Title</th>
+        <th>Grade</th>
+        <th>Year</th>
+    </tr>
+    <% for(let book of books){ %>
+        <tr>
+           <td><a href="/<%= book.title %>"><%= book.title %></a></td>
+           <td><a href="/<%= book.grade %>"><%= book.grade %></a></td>
+           <td><a href="/<%= book.year %>"><%= book.year %></a></td>
+        </tr>
+  <% } %>
+   </table>
+    
+</body>
+</html>
